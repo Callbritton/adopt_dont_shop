@@ -3,8 +3,6 @@ require 'rails_helper'
 RSpec.describe "shelters index page", type: :feature do
   it "can see all shelters" do
     shelter_1 = Shelter.create(name: "shelter_1")
-    shelter_2 = Shelter.create(name: "shelter_2")
-    shelter_3 = Shelter.create(name: "shelter_3")
 
     visit "/shelters"
 
