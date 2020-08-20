@@ -259,10 +259,25 @@
           null
         ]
       },
-      "/Users/cla/turing/2module/projects/adopt_dont_shop/app/models/shelter.rb": {
+      "/Users/cla/turing/2module/projects/adopt_dont_shop/spec/models/pet_spec.rb": {
         "lines": [
           1,
           null,
+          1,
+          null,
+          1,
+          2,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/cla/turing/2module/projects/adopt_dont_shop/app/models/pet.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
           null
         ]
       },
@@ -273,11 +288,42 @@
           null
         ]
       },
+      "/Users/cla/turing/2module/projects/adopt_dont_shop/spec/models/shelter_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/cla/turing/2module/projects/adopt_dont_shop/app/models/shelter.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
       "/Users/cla/turing/2module/projects/adopt_dont_shop/app/controllers/shelters_controller.rb": {
         "lines": [
           1,
           1,
-          2,
+          1,
           null,
           null,
           1,
@@ -332,6 +378,6 @@
         ]
       }
     },
-    "timestamp": 1597879288
+    "timestamp": 1597930149
   }
 }
