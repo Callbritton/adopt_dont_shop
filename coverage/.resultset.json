@@ -252,6 +252,7 @@
           1,
           null,
           1,
+          1,
           null
         ]
       },
@@ -302,7 +303,7 @@
         "lines": [
           1,
           1,
-          null,
+          1,
           1,
           null
         ]
@@ -342,23 +343,6 @@
           null,
           1,
           null,
-          null
-        ]
-      },
-      "/Users/cla/turing/2module/projects/adopt_dont_shop/app/controllers/pets_controller.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/cla/turing/2module/projects/adopt_dont_shop/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
           null
         ]
       },
@@ -411,10 +395,21 @@
           0,
           0,
           null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/cla/turing/2module/projects/adopt_dont_shop/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
           null
         ]
       }
     },
-    "timestamp": 1597957786
+    "timestamp": 1598052507
   }
 }
