@@ -34,7 +34,6 @@ RSpec.describe 'Shelters index page' do
   end
 
   describe 'it in more details' do
-    describe 'it even more' do
 
       it "I see each shelter's name" do
         visit '/shelters'
@@ -48,7 +47,6 @@ RSpec.describe 'Shelters index page' do
 
         expect(page).to have_content(@shelter_1.address)
         expect(page).to have_content(@shelter_2.address)
-      end
     end
   end
 end
