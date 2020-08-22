@@ -17,7 +17,7 @@ RSpec.describe "When I visit '/pets/:id'", type: :feature do
       sex: "male",
       adoption_status: "available"
     )
-    visit "/pets/#{waylon.id}"
+    visit "/pets"
     click_link "#{waylon.name}"
 
     expect(current_path).to eq("/pets/#{waylon.id}")
