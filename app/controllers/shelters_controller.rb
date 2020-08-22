@@ -7,7 +7,7 @@ class SheltersController < ApplicationController
   end
 
   def create
-    shelter = Shelter.new({
+    @shelter = Shelter.new({
       name: params[:shelter][:name],
       address: params[:shelter][:address],
       city: params[:shelter][:city],
@@ -28,7 +28,7 @@ class SheltersController < ApplicationController
   end
 
   def update
-    shelter = Shelter.find(params[:id])
+    @shelter = Shelter.find(params[:id])
     shelter.update({
       name: params[:shelter][:name],
       address: params[:shelter][:address],
@@ -48,6 +48,6 @@ class SheltersController < ApplicationController
 
   def pets
     @shelter = Shelter.find(params[:shelter_id])
-    @pets = @shelter.pets 
+    @pets = @shelter.pets
   end
 end
