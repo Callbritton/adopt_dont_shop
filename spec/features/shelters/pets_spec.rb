@@ -16,18 +16,14 @@ RSpec.describe 'Shelter show page', type: :feature do
                                    approximate_age: 1,
                                    sex: 'male',
                                    )
-
     end
 
+    it 'can update or delete pets from the shelter show pets page' do
 
-    it 'can see a given shelters information' do
+      visit "/shelters/#{@shelter_1.id}/pets"
 
-      visit "/shelters/#{@shelter_1.id}"
-      expect(page).to have_content(@shelter_1.name)
-      expect(page).to have_content(@shelter_1.address)
-      expect(page).to have_content(@shelter_1.city)
-      expect(page).to have_content(@shelter_1.state)
-      expect(page).to have_content(@shelter_1.zip)
+      expect(page).to have_link("Update Pet", href: "/pets/#{@pet_1.id}/edit")
+      expect(page).to have_link("Delete Pet", href: "/pets/#{@pet_1.id}")
     end
   end
 end

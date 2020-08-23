@@ -9,7 +9,7 @@ RSpec.describe "When I visit '/pets/:id'", type: :feature do
       state: "CO",
       zip: "80056"
     )
-    waylon = shelter_1.pets.create(
+    pet_1 = shelter_1.pets.create(
       image: "",
       name: "Waylon",
       description: "1 year old rottie pup",
@@ -18,8 +18,8 @@ RSpec.describe "When I visit '/pets/:id'", type: :feature do
       adoption_status: "available"
     )
     visit "/pets"
-    click_link "#{waylon.name}"
+    click_link "#{pet_1.name}"
 
-    expect(current_path).to eq("/pets/#{waylon.id}")
+    expect(current_path).to eq("/pets/#{pet_1.id}")
   end
 end
