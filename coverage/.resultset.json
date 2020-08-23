@@ -354,6 +354,7 @@
           1,
           1,
           null,
+          null,
           null
         ]
       },
@@ -513,13 +514,6 @@
           1,
           null,
           1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
           null,
           1,
           null,
@@ -550,6 +544,36 @@
           1,
           1,
           null,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/cla/turing/2module/projects/adopt_dont_shop/spec/features/shelters/pets_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
           1,
           1,
           null,
@@ -630,7 +654,7 @@
           null,
           null,
           1,
-          21,
+          23,
           null
         ]
       },
@@ -763,8 +787,8 @@
           null,
           null,
           1,
-          1,
-          1,
+          2,
+          2,
           null,
           null,
           1,
@@ -780,6 +804,6 @@
         ]
       }
     },
-    "timestamp": 1598201856
+    "timestamp": 1598202661
   }
 }
