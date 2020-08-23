@@ -22,7 +22,11 @@ class PetsController < ApplicationController
     @pet = Pet.find(params[:pet_id])
   end
 
-
+  def update
+    @pet = Pet.find(params[:pet_id])
+    @pet.update(pet_params)
+    redirect_to "/pets/#{@pet.id}"
+  end
 
 
 
