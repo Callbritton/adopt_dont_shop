@@ -35,6 +35,6 @@ RSpec.describe "As a visitor When I visit the pet show page" do
     expect(page).to have_content ("Charles")
     expect(page).to have_content (6)
     expect(page).to_not have_content ("Duke")
-    expect(page).to_not have_content ("9")
+    expect(page).to_not have_content (9)
   end
 end
