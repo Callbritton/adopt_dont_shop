@@ -5,7 +5,9 @@
 <p>Sex: <%= @pet.sex %></p>
 <p>Adoption Status: <%= @pet.adoption_status %></p>
 
-<%= link_to 'Update Pet', "/pets/#{@pet.id}/edit" %>
+<%= link_to "Update Pet", "/pets/#{@pet.id}/edit" %>
+<br>
+<%= link_to "Delete Pet", "/pets/#{@pet.id}", method: :delete %>
 <br>
 <br>
 <a href="/pets">Return to Pet Index</a>
