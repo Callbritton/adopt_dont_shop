@@ -14,11 +14,19 @@ class PetsController < ApplicationController
 
   def create
     pet = Pet.new(pet_params)
-    pet.save 
+    pet.save
     redirect_to "/shelters/#{pet_params[:shelter_id]}/pets"
   end
 
+  def edit
+    @pet = Pet.find(params[:pet_id])
+  end
 
+  def update
+    @pet = Pet.find(params[:pet_id])
+    @pet.update(pet_params)
+    redirect_to "/pets/#{@pet.id}"
+  end
 
 
 
