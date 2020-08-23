@@ -5,10 +5,10 @@ RSpec.describe 'Shelter show page', type: :feature do
     before :each do
 
       @shelter_1 = Shelter.create!(name: "Willy's Animal Center",
-                            address: "2020 Whirlwind Dr",
-                            city: "Denver",
-                            state: "CO",
-                            zip: 80014)
+                                   address: "2020 Whirlwind Dr",
+                                   city: "Denver",
+                                   state: "CO",
+                                   zip: 80014)
 
 
       @pet_1 = @shelter_1.pets.create!(image: '',
