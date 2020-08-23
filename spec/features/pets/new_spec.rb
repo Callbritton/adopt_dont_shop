@@ -13,13 +13,13 @@ RSpec.describe "creating a new pet" do
     # When I visit the shelter pets index page to create a new pet as a nested resource
     # With the path:  '/shelters/:shelter_id/pets/new'
     visit "/shelters/#{shelter.id}/pets/new"
-    # Then there is a form to add the Title, Length, and Play_Count of a new song
+    # Then there is a form to add the name, description, and approximate_age
     fill_in :name, with: name
     fill_in :description, with: description
     fill_in :approximate_age, with: approximate_age
 
     click_on "Create Pet"
-    # And When I fill this form in and click the Create Song button
+
     new_pet = Pet.last
     # And the page displays that pets with name, description, and approximate_age
     expect(current_path).to eq("/pets/#{new_pet.id}")
