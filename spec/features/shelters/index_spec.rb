@@ -31,10 +31,10 @@ RSpec.describe 'Shelters index page' do
     end
   end
 
-  describe "it can edit shelters from the index page" do
+  describe "it can edit and delete shelters from the index page" do
 
     it "I can update or delete a shelter" do
-    
+
       visit "/shelters"
 
       expect(page).to have_link("Update Shelter", href: "/shelters/#{@shelter_1.id}/edit")

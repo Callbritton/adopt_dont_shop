@@ -37,6 +37,6 @@ RSpec.describe "pets index page", type: :feature do
 
     visit "/pets"
     expect(page).to have_link("Update Pet", href: "/pets/#{pet_1.id}/edit")
-
+    expect(page).to have_link("Delete Pet", href: "/pets/#{pet_1.id}")
   end
 end

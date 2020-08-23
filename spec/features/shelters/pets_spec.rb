@@ -18,11 +18,12 @@ RSpec.describe 'Shelter show page', type: :feature do
                                    )
     end
 
-    it 'can update pets from the shelter show pets page' do
+    it 'can update or delete pets from the shelter show pets page' do
 
       visit "/shelters/#{@shelter_1.id}/pets"
+
       expect(page).to have_link("Update Pet", href: "/pets/#{@pet_1.id}/edit")
-      
+      expect(page).to have_link("Delete Pet", href: "/pets/#{@pet_1.id}")
     end
   end
 end
